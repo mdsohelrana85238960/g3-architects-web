@@ -1,0 +1,266 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Work Sans', sans-serif;
+}
+
+header{
+    padding: 50px 240px;
+    background: rgba(255, 144, 14, 0.10);
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    
+}
+ul > li{
+    margin-right: 20px;
+    
+}
+.nav-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313;
+}
+ul li a{
+    color: #424242;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+img{
+    width: 100%;
+}
+.header-title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+
+.header-section{
+    margin: 45px 0;
+    
+    
+}
+.header-contante{
+   max-width:800px;
+    margin: 0 auto;
+    /* text-align: justify; */
+    text-align: center;
+    
+    
+}
+.header-item {
+margin: 18px 0;
+}
+.btn-primary{
+    background: #f3ac13;
+    padding: 20px 25px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.yello{
+    color: #f3ac13;
+}
+
+.text-light-gray {
+    color: #727272;
+    text-align: justify;
+}
+.main-section{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    padding:0 100px;
+    gap: 2rem
+}
+.main-img-section>img{
+width: 342px;
+
+}
+.main-img-section{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 1rem;
+}
+
+.main-contante > p{
+    margin: 20px 0;
+}
+.features{
+    display: flex;
+    gap: 100px;
+    margin-top: 130px;
+    
+
+}
+.features-img img {
+    /* height: 1100px; */
+    height: 100%;
+    width: 800px;
+    
+}
+
+.features-title{
+    font-size:2.8rem ;
+    font-weight: 700;
+    border-left: 5px solid #FF900E;
+    margin-left: 15px;
+    padding: 10px;
+}
+
+
+.desktop-mobail{
+    padding: 60px 40px ;
+    /* margin: 20px 0; */
+}
+.desktop{
+  margin: 20px 0;  
+}
+
+.some{
+    margin: 100px 0px 30px 10px;
+}
+
+.awards{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.card{
+    border: 1px solid red;
+    border-radius: 5px;
+    padding:  30px;
+    margin:20px;
+}
+
+.card-img{
+width: 46px;
+}
+.ruselt{
+    text-align: center;
+    font-size: 45px;
+    padding: 10px;
+}
+.card-title{
+    font-weight: bold;
+    /* padding: 5px; */
+    font-size: 1.2rem;
+    text-align: center;
+    
+}
+
+.sponsors{
+text-align: center;
+margin: 50px;
+}
+.sponsor-pp{
+    color: #727272;
+    padding: 20px 0;
+}
+.company{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    text-align: center;
+    margin-bottom: 100px ;
+}
+
+.company>img{
+    width: 165px;
+    height: 50px;
+}
+.sponsors-title{
+    font-size: 3rem;
+    color: #292525;
+}
+
+
+@media screen and (max-width:576px) {
+    header{
+        padding:20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .header-section{
+        flex-direction: column;
+    }
+    .main-section{
+        flex-direction: column;
+    }
+    .main-img-section{
+        grid-template-columns: 1fr;
+    }
+    .features{
+        flex-direction: column;
+    }
+    .features-img img{
+        width: 90%;
+         /* height: auto; */
+        margin-left: 45px ;
+        
+        
+    }
+    .company{
+        flex-direction: column;
+        /* text-align: center; */
+        align-items: center;
+    }
+    .awards{
+        flex-direction: column;
+    }
+    .card{
+        /* margin:20px; */
+    }
+    
+
+
+
+}
+
+@media screen and (min-width:576px)  and (max-width:960px){
+
+    header{
+        padding:20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .header-section{
+        flex-direction: column;
+    }
+    .main-section{
+        flex-direction: column;
+    }
+    .features{
+        flex-direction: column;
+    }
+    .features-img img{
+        width: 90%;
+        height: auto;
+        margin-left: 90px ;
+    }
+    .company{
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+       margin-left: 80px;
+        
+    }
+    .awards{
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+       padding: 0 30px;
+       gap: 20px;
+    }
+}
